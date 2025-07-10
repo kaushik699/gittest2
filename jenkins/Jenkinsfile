@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'echo "I am testing the image in the docker"'
+                sh 'echo "I am testing the image in the ansible"'
             }
         }
         stage('Deploy') {
