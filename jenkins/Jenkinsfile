@@ -16,5 +16,12 @@ pipeline {
                 sh 'echo "I am development the image in the kubernetess"'
             }
         }
+        stage('CPU details'){
+            steps{
+                sh '''
+                    lscpu
+                '''
+            }
+        }
     }
 }
