@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'echo "I am development the image in the kubernetes"'
+                sh 'echo "I am development the image in the kubernetess"'
             }
         }
     }
