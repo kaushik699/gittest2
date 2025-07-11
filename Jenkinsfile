@@ -21,6 +21,7 @@ pipeline{
         echo '✅ Running unit tests...'
         sh '''
           . venv/bin/activate
+          export PYTHONPATH=.
           pytest --junitxml=test-results.xml
         '''
       }
