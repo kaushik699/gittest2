@@ -30,7 +30,7 @@ pipeline {
             steps {
                 sh '''
                     . venv/bin/activate
-                    pytest --cov=app tests/ --junitxml=test-results.xml
+                    PYTHONPATH=. pytest --cov=app tests/ --junitxml=test-results.xml
                 '''
             }
         }
