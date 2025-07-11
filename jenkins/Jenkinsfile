@@ -1,0 +1,29 @@
+pipeline {
+    agent {
+        label 'Dev'
+    }
+    stages {
+        stage('Build') {
+            steps {
+                sh 'echo "I am building the image in the docker"'
+            }
+        }
+        stage('Test') {
+            steps {
+                sh 'echo "I am testing the image in the ansible"'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                sh 'echo "I am development the image in the kubernetess"'
+            }
+        }
+        stage('CPU details'){
+            steps{
+                sh '''
+                    lscpu
+                '''
+            }
+        }
+    }
+}
