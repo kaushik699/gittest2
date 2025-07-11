@@ -1,11 +1,6 @@
 pipeline {
-    agent any
-
-    tools {
-        python 'Python3'
-    }
-
-    stages {
+    agent any{
+        stages {
         stage('Checkout') {
             steps {
                 checkout scm
@@ -53,4 +48,6 @@ pipeline {
             echo '❌ Pipeline failed!'
         }
     }
+    }
+    
 }
