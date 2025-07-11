@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('Build'){
             steps{
-                sh 'echo "Hello Jenkins this is running the agents"'
+                sh 'echo "Hello Jenkins, this is running the agents"'
             }
         }
     }
